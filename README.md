@@ -19,27 +19,33 @@ cd todo-list
 mvn clean package
 
 4- Run the application:
-java -jar target/todo-list-1.0.0.jar
+java -jar target/todolist-0.0.1-SNAPSHOT.jar
 
-Replace todo-list-1.0.0.jar with the actual name of the generated JAR file.
-
-5- Once the application is running, you can access it at http://localhost:8080 use api-docs: http://localhost:8080/swagger-ui/index.html
+5- Once the application is running, you can access it at http://localhost:8080 
+or use api-docs: http://localhost:8080/swagger-ui/index.html
 
 # API Endpoints
+
 GET /api/v1/tasks/ : Find all task
+
 GET /api/v1/tasks/{id} : Find task by ID
+
 GET /api/v1/tasks/pending : Find all pending tasks
+
 GET /api/v1/tasks/completed : Find all completed tasks
+
 POST /api/v1/tasks/ : Creates new task
+
 PUT /api/v1/tasks/{id} : Updates existing task
+
 DELETE /api/v1/tasks/{id} : Deletes existing task
 
 
 # Technologies Used
-Java
-Spring Boot
-Spring Data JPA
-H2 Database (embedded)
-Maven
+* Java
+* Spring Boot
+* Spring Data JPA
+* H2 Database (embedded)
+* Maven
 
 
